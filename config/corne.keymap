@@ -10,16 +10,18 @@
 
 / {
 macros {
-        e_acute: e_acute {
-            label = "e_acute";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>,
-                       <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
-                       <&macro_release &kp LALT>;
+        acute_accent: acute_accent {
+            label = "ACUTE_ACCENT";
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings
+                = <&macro_param_1to1>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N0>
+                , <&macro_param_2to1>
+                , <&macro_release &kp LALT>
+                , <&macro_param_1to1>;
         };
-        
-        // Ajoutez ici d'autres définitions de macros
     };
 
 
