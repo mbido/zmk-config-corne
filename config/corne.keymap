@@ -9,15 +9,15 @@
 
 / {
 macros {
-        acute_accent: acute_accent {
-            label = "ACUTE_ACCENT";
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
+        e_acute: e_acute {
+            label = "e_acute";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0>
-                , <&macro_param_1to1>
-                , <&macro_release &kp LALT>;
+                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
+                , <&macro_release &kp LALT>
+                ;
         };
     };
 
@@ -41,7 +41,7 @@ macros {
 
         accents {
             bindings = <
-&acute_accent E N1  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&e_acute  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans  &trans  &trans    &trans  &trans  &trans
