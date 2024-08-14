@@ -6,20 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
+#include "macros.dtsi"
 / {
-macros {
-        e_acute: e_acute {
-            label = "e_acute";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
-                , <&macro_release &kp LALT>
-                ;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
