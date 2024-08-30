@@ -8,8 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-
-behaviors {
+    behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -19,7 +18,8 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-	td: tapdance {
+
+        td: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
             #binding-cells = <2>;
@@ -403,14 +403,32 @@ behaviors {
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Y  &kp C  &kp L           &kp M             &kp K        &kp Z    &kp F  &kp U          &kp COMMA  &kp SEMICOLON  &none
-&none  &kp I  &kp S  &kp R           &kp T             &kp G        &kp P    &kp N  &kp E          &kp A      &kp O          &none
-&none  &kp Q  &kp V  &kp W           &kp D             &kp J        &kp B    &kp H  &kp SLASH      &kp DOT    &kp X          &none
-                     &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp SPACE    &kp RET  &to 1  &kp RIGHT_GUI
+&none  &kp Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &kp SEMICOLON  &none
+&none  &kp I  &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O          &none
+&none  &kp Q  &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X          &none
+                     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
             >;
         };
 
         L1 {
+            bindings = <
+&none  &kp ESC    &kp AT     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp TAB    &kp EQUAL  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp TILDE  &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 2   &none
+                             &trans  &trans  &to 0     &trans  &to 3   &trans
+            >;
+        };
+
+        L2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        L3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
