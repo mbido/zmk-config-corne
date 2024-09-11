@@ -13,7 +13,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -403,19 +403,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &kp SEMICOLON  &none
-&none  &kp I  &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O          &none
-&none  &kp Q  &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X          &none
-                     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
+&none  &td ESC Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &kp SEMICOLON  &none
+&none  &kp I      &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O          &none
+&none  &kp Q      &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X          &none
+                         &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
             >;
         };
 
         L1 {
             bindings = <
-&none  &kp ESC    &kp AT     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp TAB    &kp EQUAL  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp TILDE  &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 2   &none
-                             &trans  &trans  &to 0     &trans  &to 3   &trans
+&none  &kp ESC    &kp AT     &trans  &trans  &trans    &e_acute  &e_grave  &trans  &trans  &trans  &none
+&none  &kp TAB    &kp EQUAL  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &none
+&none  &kp TILDE  &trans     &trans  &trans  &trans    &trans    &trans    &trans  &trans  &to 2   &none
+                             &trans  &trans  &to 0     &trans    &to 3     &trans
             >;
         };
 
