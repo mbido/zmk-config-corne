@@ -32,364 +32,29 @@
 
     macros {
         // à
-
-        a_grave: a_grave {
-            label = "a_grave";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // á
-
-        a_acute: a_acute {
-            label = "a_acute";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // â
-
-        a_circumflex: a_circumflex {
-            label = "a_circumflex";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ã
-
-        a_tilde: a_tilde {
-            label = "a_tilde";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N7>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ä
-
-        a_umlaut: a_umlaut {
-            label = "a_umlaut";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // è
-
-        e_grave: e_grave {
-            label = "e_grave";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // é
-
-        e_acute: e_acute {
-            label = "e_acute";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ê
-
-        e_circumflex: e_circumflex {
-            label = "e_circumflex";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ë
-
-        e_umlaut: e_umlaut {
-            label = "e_umlaut";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N5>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ì
-
-        i_grave: i_grave {
-            label = "i_grave";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // í
-
-        i_acute: i_acute {
-            label = "i_acute";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // î
-
-        i_circumflex: i_circumflex {
-            label = "i_circumflex";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ï
-
-        i_umlaut: i_umlaut {
-            label = "i_umlaut";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N9>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ò
-
-        o_grave: o_grave {
-            label = "o_grave";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ó
-
-        o_acute: o_acute {
-            label = "o_acute";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ô
-
-        o_circumflex: o_circumflex {
-            label = "o_circumflex";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // õ
-
-        o_tilde: o_tilde {
-            label = "o_tilde";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N5>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ö
-
-        o_umlaut: o_umlaut {
-            label = "o_umlaut";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ù
-
-        u_grave: u_grave {
-            label = "u_grave";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N9>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ú
-
-        u_acute: u_acute {
-            label = "u_acute";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // û
-
-        u_circumflex: u_circumflex {
-            label = "u_circumflex";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ü
-
-        u_umlaut: u_umlaut {
-            label = "u_umlaut";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ñ
-
-        n_tilde: n_tilde {
-            label = "n_tilde";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         // ç
-
-        c_cedilla: c_cedilla {
-            label = "c_cedilla";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
     };
 
     keymap {
@@ -403,9 +68,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &td ESC Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &kp SEMICOLON  &none
-&none  &kp I      &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O          &none
-&none  &kp Q      &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X          &none
+&none  &td ESC Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td QUESTION SEMICOLON  &none
+&none  &kp I      &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O                   &none
+&none  &kp Q      &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                   &none
                          &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
             >;
         };
