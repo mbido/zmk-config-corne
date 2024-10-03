@@ -57,6 +57,70 @@
         // ç
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        KP_N_5 {
+            bindings = <&kp KP_NUMBER_5>;
+            key-positions = <39 4>;
+            layers = <1>;
+        };
+
+        KP_N_6 {
+            bindings = <&kp KP_NUMBER_6>;
+            key-positions = <39 5>;
+            layers = <1>;
+        };
+
+        KP_N_7 {
+            bindings = <&kp KP_NUMBER_7>;
+            key-positions = <39 6>;
+            layers = <1>;
+        };
+
+        KP_N_8 {
+            bindings = <&kp KP_NUMBER_8>;
+            key-positions = <39 7>;
+            layers = <1>;
+        };
+
+        KP_N_9 {
+            bindings = <&kp KP_NUMBER_9>;
+            key-positions = <39 8>;
+            layers = <1>;
+        };
+
+        KP_LEFT_BRA {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <39 16>;
+            layers = <1>;
+        };
+
+        KP_RIGHT_BRA {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <39 19>;
+            layers = <1>;
+        };
+
+        KP_GREATER {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <39 9>;
+            layers = <1>;
+        };
+
+        KP_DOWN {
+            bindings = <&kp DOWN>;
+            key-positions = <39 31>;
+            layers = <1>;
+        };
+
+        KP_UP {
+            bindings = <&kp UP>;
+            key-positions = <39 28>;
+            layers = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -68,19 +132,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &td ESC Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td QUESTION SEMICOLON  &none
-&none  &kp I      &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O                   &none
-&none  &kp Q      &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                   &none
-                         &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
+&none  &kp Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td QUESTION SEMICOLON  &none
+&none  &kp I  &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O                   &none
+&none  &kp Q  &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                   &none
+                     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
             >;
         };
 
         L1 {
             bindings = <
-&none  &kp ESC    &kp AT     &trans  &trans  &trans    &e_acute  &e_grave  &trans  &trans  &trans  &none
-&none  &kp TAB    &kp EQUAL  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &none
-&none  &kp TILDE  &trans     &trans  &trans  &trans    &trans    &trans    &trans  &trans  &to 2   &none
-                             &trans  &trans  &to 0     &trans    &to 3     &trans
+&none  &kp ESC    &kp AT         &kp PERCENT     &kp KP_NUMBER_0       &kp KP_NUMBER_1      &kp KP_NUMBER_2   &kp KP_NUMBER_3                 &kp KP_NUMBER_4  &kp LESS_THAN  &kp COLON     &none
+&none  &kp TAB    &kp EQUAL      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &hm LEFT_GUI RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PLUS       &kp ASTERISK  &none
+&none  &kp TILDE  &kp AMPERSAND  &kp PIPE        &kp LEFT              &kp DOLLAR           &kp HASH          &kp RIGHT                       &kp BACKSLASH    &kp GRAVE      &to 2         &none
+                                 &kp LCTRL       &kp LEFT_SHIFT        &to 0                &none             &to 3                           &kp RIGHT_ALT
             >;
         };
 
