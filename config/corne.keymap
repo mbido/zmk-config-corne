@@ -125,6 +125,11 @@
             key-positions = <39 22>;
             layers = <1>;
         };
+
+        test {
+            bindings = <&kp KP_NUMBER_5>;
+            key-positions = <39 4>;
+        };
     };
 
     keymap {
