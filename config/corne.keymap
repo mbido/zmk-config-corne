@@ -31,30 +31,161 @@
     };
 
     macros {
-        // à
-        // á
-        // â
-        // ã
-        // ä
-        // è
-        // é
-        // ê
-        // ë
-        // ì
-        // í
-        // î
-        // ï
-        // ò
-        // ó
-        // ô
-        // õ
-        // ö
-        // ù
-        // ú
-        // û
-        // ü
-        // ñ
-        // ç
+        macro_a_grave: macro_a_grave {
+            label = "à";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 133>;
+        };
+        macro_a_acute: macro_a_acute {
+            label = "á";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 160>;
+        };
+        macro_a_circumflex: macro_a_circumflex {
+            label = "â";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 131>;
+        };
+        macro_A_grave: macro_A_grave {
+            label = "À";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0192>;
+        };
+        macro_A_acute: macro_A_acute {
+            label = "Á";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0193>;
+        };
+        macro_A_circumflex: macro_A_circumflex {
+            label = "Â";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0194>;
+        };
+        macro_e_acute: macro_e_acute {
+            label = "é";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 130>;
+        };
+        macro_e_grave: macro_e_grave {
+            label = "è";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 138>;
+        };
+        macro_e_circumflex: macro_e_circumflex {
+            label = "ê";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 136>;
+        };
+        macro_e_diaeresis: macro_e_diaeresis {
+            label = "ë";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 137>;
+        };
+        macro_E_acute: macro_E_acute {
+            label = "É";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 144>;
+        };
+        macro_E_grave: macro_E_grave {
+            label = "È";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0200>;
+        };
+        macro_E_circumflex: macro_E_circumflex {
+            label = "Ê";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0201>;
+        };
+        macro_E_diaeresis: macro_E_diaeresis {
+            label = "Ë";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0203>;
+        };
+        macro_i_circumflex: macro_i_circumflex {
+            label = "î";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 140>;
+        };
+        macro_i_diaeresis: macro_i_diaeresis {
+            label = "ï";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 139>;
+        };
+        macro_I_circumflex: macro_I_circumflex {
+            label = "Î";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0206>;
+        };
+        macro_I_diaeresis: macro_I_diaeresis {
+            label = "Ï";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0207>;
+        };
+        macro_o_acute: macro_o_acute {
+            label = "ó";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 162>;
+        };
+        macro_o_circumflex: macro_o_circumflex {
+            label = "ô";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 147>;
+        };
+        macro_O_acute: macro_O_acute {
+            label = "Ó";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0211>;
+        };
+        macro_O_circumflex: macro_O_circumflex {
+            label = "Ô";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0212>;
+        };
+        macro_u_grave: macro_u_grave {
+            label = "ù";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 151>;
+        };
+        macro_u_circumflex: macro_u_circumflex {
+            label = "û";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 150>;
+        };
+        macro_U_grave: macro_U_grave {
+            label = "Ù";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0217>;
+        };
+        macro_U_circumflex: macro_U_circumflex {
+            label = "Û";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 0219>;
+        };
+        macro_ae: macro_ae {
+            label = "æ";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 145>;
+        };
+        macro_AE: macro_AE {
+            label = "Æ";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 146>;
+        };
+        macro_c_cedilla: macro_c_cedilla {
+            label = "ç";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 135>;
+        };
+        macro_left_quotation: macro_left_quotation {
+            label = "«";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 174>;
+        };
+        macro_right_quotation: macro_right_quotation {
+            label = "»";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LEFT_ALT>, <&kp 175>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -88,10 +219,10 @@
 
         L2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&macro_a_grave  &macro_a_acute  &macro_a_circumflex  &macro_A_grave  &macro_A_acute  &macro_A_circumflex  &macro_e_acute  &macro_e_grave  &macro_e_circumflex  &macro_e_diaeresis  &macro_E_acute  &macro_E_grave
+&macro_E_circumflex  &macro_E_diaeresis  &macro_i_circumflex  &macro_i_diaeresis  &macro_I_circumflex  &macro_I_diaeresis  &macro_o_acute  &macro_o_circumflex  &macro_O_acute  &macro_O_circumflex  &macro_u_grave  &macro_u_circumflex
+&macro_U_grave  &macro_U_circumflex  &macro_ae  &macro_AE  &macro_c_cedilla  &macro_left_quotation  &macro_right_quotation  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &to 0    &trans  &trans  &trans
             >;
         };
 
