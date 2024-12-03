@@ -108,7 +108,7 @@
             bindings = <
 &none  &kp ESC    &kp AT         &kp PERCENT     &kp KP_NUMBER_5   &kp KP_NUMBER_6      &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &kp GREATER_THAN  &kp COLON  &none
 &none  &kp TAB    &kp EQUAL      &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PLUS          &kp CARET  &none
-&none  &kp TILDE  &kp AMPERSAND  &kp PIPE        &kp UP_ARROW      &kp DOLLAR           &kp HASH          &kp DOWN           &kp BACKSLASH    &kp GRAVE         &to 2      &none
+&none  &kp TILDE  &kp AMPERSAND  &kp PIPE        &kp UP_ARROW      &kp DOLLAR           &kp HASH          &kp DOWN           &kp BACKSLASH    &kp PIPE          &to 2      &none
                                  &kp LCTRL       &kp LEFT_SHIFT    &to 0                &none             &to 3              &kp RIGHT_ALT
             >;
         };
