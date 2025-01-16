@@ -6,6 +6,9 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -37,247 +40,463 @@
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N3>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_a_acute: macro_a_acute {
             label = "á";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N0>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_a_circumflex: macro_a_circumflex {
             label = "â";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N1>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_A_grave: macro_A_grave {
             label = "À";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N2>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_A_acute: macro_A_acute {
             label = "Á";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_A_circumflex: macro_A_circumflex {
             label = "Â";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N4>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_e_acute: macro_e_acute {
             label = "é";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N0>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_e_grave: macro_e_grave {
             label = "è";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N8>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_e_circumflex: macro_e_circumflex {
             label = "ê";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N6>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_e_diaeresis: macro_e_diaeresis {
             label = "ë";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N7>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_E_acute: macro_E_acute {
             label = "É";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N4>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_E_grave: macro_E_grave {
             label = "È";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N0>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_E_circumflex: macro_E_circumflex {
             label = "Ê";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_E_diaeresis: macro_E_diaeresis {
             label = "Ë";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N3>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_i_circumflex: macro_i_circumflex {
             label = "î";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N0>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_i_diaeresis: macro_i_diaeresis {
             label = "ï";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N9>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_I_circumflex: macro_I_circumflex {
             label = "Î";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N6>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_I_diaeresis: macro_I_diaeresis {
             label = "Ï";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N7>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_o_acute: macro_o_acute {
             label = "ó";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N2>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_o_circumflex: macro_o_circumflex {
             label = "ô";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N7>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_O_acute: macro_O_acute {
             label = "Ó";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_O_circumflex: macro_O_circumflex {
             label = "Ô";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N2>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_u_grave: macro_u_grave {
             label = "ù";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N1>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_u_circumflex: macro_u_circumflex {
             label = "û";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N0>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_U_grave: macro_U_grave {
             label = "Ù";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N7>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_U_circumflex: macro_U_circumflex {
             label = "Û";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N9>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_ae: macro_ae {
             label = "æ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N5>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_AE: macro_AE {
             label = "Æ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_c_cedilla: macro_c_cedilla {
             label = "ç";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N5>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_left_quotation: macro_left_quotation {
             label = "«";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N4>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
+
         macro_right_quotation: macro_right_quotation {
             label = "»";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N5>, <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
     };
 
@@ -301,39 +520,30 @@
             >;
         };
 
-        L1 {
+        layer_1 {
             bindings = <
-&none  &kp ESC    &kp AT         &kp PERCENT     &kp KP_NUMBER_0       &kp KP_NUMBER_1      &kp KP_NUMBER_2   &kp KP_NUMBER_3                 &kp KP_NUMBER_4  &kp LESS_THAN  &kp COLON     &none
-&none  &kp TAB    &kp EQUAL      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &hm LEFT_GUI RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PLUS       &kp ASTERISK  &none
-&none  &kp TILDE  &kp AMPERSAND  &kp PIPE        &kp LEFT              &kp DOLLAR           &kp HASH          &kp RIGHT                       &kp BACKSLASH    &kp GRAVE      &to 2         &none
-                                 &kp LCTRL       &kp LEFT_SHIFT        &to 0                &mo 4             &to 3                           &kp RIGHT_ALT
+&none  &kp ESCAPE  &kp AT     &kp HASH          &kp DOLLAR      &kp PERCENT          &kp CARET           &kp AMPERSAND             &kp ASTERISK               &td MINUS COMMA      &td QUESTION SEMICOLON  &none
+&none  &kp TAB     &kp EQUAL  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp SINGLE_QUOTE     &td HOME BACKSLASH  &hm RIGHT_GUI LEFT_BRACE  &hm RIGHT_ALT RIGHT_BRACE  &td END PIPE         &kp O                   &none
+&none  &kp TILDE   &kp GLOBE  &kp W             &kp D           &kp DOUBLE_QUOTES    &kp B               &kp H                     &td UNDERSCORE SLASH       &td EXCLAMATION DOT  &to 2                   &none
+                              &kp LEFT_CONTROL  &kp LEFT_SHIFT  &to 0                &kp RET             &to 3                     &kp BACKSPACE
             >;
         };
 
-        L2 {
+        layer_2 {
             bindings = <
-&macro_a_grave  &macro_a_acute  &macro_a_circumflex  &macro_A_grave  &macro_A_acute  &macro_A_circumflex  &macro_e_acute  &macro_e_grave  &macro_e_circumflex  &macro_e_diaeresis  &macro_E_acute  &macro_E_grave
-&macro_E_circumflex  &macro_E_diaeresis  &macro_i_circumflex  &macro_i_diaeresis  &macro_I_circumflex  &macro_I_diaeresis  &macro_o_acute  &macro_o_circumflex  &macro_O_acute  &macro_O_circumflex  &macro_u_grave  &macro_u_circumflex
-&macro_U_grave  &macro_U_circumflex  &macro_ae  &macro_AE  &macro_c_cedilla  &macro_left_quotation  &macro_right_quotation  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &to 0    &trans  &trans  &trans
+&none  &kp ESCAPE  &msc SCRL_LEFT  &mmv MOVE_UP      &msc SCRL_RIGHT  &none    &kp Z              &kp F               &kp U                   &td MINUS COMMA      &td QUESTION SEMICOLON  &none
+&none  &kp TAB     &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &none    &td LG(LEFT) LEFT  &hm RIGHT_GUI DOWN  &hm RIGHT_ALT UP_ARROW  &td LG(RIGHT) RIGHT  &kp O                   &none
+&none  &kp GRAVE   &mkp RCLK       &msc SCRL_UP      &msc SCRL_DOWN   &none    &mkp LCLK          &kp H               &td UNDERSCORE SLASH    &td EXCLAMATION DOT  &kp X                   &none
+                                   &kp LEFT_CONTROL  &kp LEFT_SHIFT   &to 0    &kp RET            &to 1               &kp BACKSPACE
             >;
         };
 
-        L3 {
+        layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_11 {
-            bindings = <
-&none  &kp ESC    &kp AT         &kp PERCENT     &kp KP_NUMBER_5   &kp KP_NUMBER_6      &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &kp GREATER_THAN  &kp COLON  &none
-&none  &kp TAB    &kp EQUAL      &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PLUS          &kp CARET  &none
-&none  &kp TILDE  &kp AMPERSAND  &kp PIPE        &kp UP_ARROW      &kp DOLLAR           &kp HASH          &kp DOWN           &kp BACKSLASH    &kp PIPE          &to 2      &none
-                                 &kp LCTRL       &kp LEFT_SHIFT    &to 0                &none             &to 3              &kp RIGHT_ALT
+&none  &kp ESCAPE  &none         &none                       &none                     &kp UNDERSCORE    &kp MINUS        &kp KP_NUMBER_7            &kp KP_NUMBER_8            &kp KP_NUMBER_9  &none  &none
+&none  &kp TAB     &kp K_MUTE    &hm LEFT_ALT C_VOLUME_DOWN  &hm LEFT_GUI C_VOLUME_UP  &kp PLUS          &kp EQUAL        &hm RIGHT_GUI KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
+&none  &none       &kp ASTERISK  &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC      &kp PERIOD        &kp KP_NUMBER_0  &kp KP_NUMBER_1            &kp KP_NUMBER_2            &kp KP_NUMBER_3  &to 2  &none
+                                 &kp LEFT_CONTROL            &kp LEFT_SHIFT            &to 0             &kp RET          &to 1                      &kp BACKSPACE
             >;
         };
     };
