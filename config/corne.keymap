@@ -33,9 +33,6 @@
         };
     };
 
-    macros {
-    };
-
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -58,10 +55,10 @@
 
         layer_1 {
             bindings = <
-&none  &kp ESCAPE  &kp AT     &kp HASH          &kp DOLLAR      &kp PERCENT          &kp CARET           &kp AMPERSAND             &kp ASTERISK               &td MINUS COMMA      &td QUESTION SEMICOLON  &none
-&none  &kp TAB     &kp EQUAL  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp SINGLE_QUOTE     &td HOME BACKSLASH  &hm RIGHT_GUI LEFT_BRACE  &hm RIGHT_ALT RIGHT_BRACE  &td END PIPE         &kp O                   &none
-&none  &kp TILDE   &kp GLOBE  &kp W             &kp D           &kp DOUBLE_QUOTES    &kp B               &kp H                     &td UNDERSCORE SLASH       &td EXCLAMATION DOT  &to 2                   &none
-                              &kp LEFT_CONTROL  &kp LEFT_SHIFT  &to 0                &kp RET             &to 3                     &kp BACKSPACE
+&none  &kp ESCAPE  &kp AT                                &kp HASH          &kp DOLLAR      &kp PERCENT          &kp CARET           &kp AMPERSAND             &kp ASTERISK               &td COLON SEMICOLON  &none  &none
+&none  &kp TAB     &kp EQUAL                             &hm LEFT_ALT R    &hm LEFT_GUI T  &kp SINGLE_QUOTE     &td HOME BACKSLASH  &hm RIGHT_GUI LEFT_BRACE  &hm RIGHT_ALT RIGHT_BRACE  &td END PIPE         &none  &none
+&none  &kp TILDE   &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp W             &kp D           &kp DOUBLE_QUOTES    &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &kp RIGHT_BRACKET    &to 2  &none
+                                                         &kp LEFT_CONTROL  &kp LEFT_SHIFT  &to 0                &kp RET             &to 3                     &kp BACKSPACE
             >;
         };
 
@@ -76,7 +73,7 @@
 
         layer_3 {
             bindings = <
-&none  &kp ESCAPE  &none         &none                       &none                     &kp UNDERSCORE    &kp MINUS        &kp KP_NUMBER_7            &kp KP_NUMBER_8            &kp KP_NUMBER_9  &none  &none
+&none  &kp ESCAPE  &none         &kp SLASH                   &none                     &kp UNDERSCORE    &kp MINUS        &kp KP_NUMBER_7            &kp KP_NUMBER_8            &kp KP_NUMBER_9  &none  &none
 &none  &kp TAB     &kp K_MUTE    &hm LEFT_ALT C_VOLUME_DOWN  &hm LEFT_GUI C_VOLUME_UP  &kp PLUS          &kp EQUAL        &hm RIGHT_GUI KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
 &none  &none       &kp ASTERISK  &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC      &kp PERIOD        &kp KP_NUMBER_0  &kp KP_NUMBER_1            &kp KP_NUMBER_2            &kp KP_NUMBER_3  &to 2  &none
                                  &kp LEFT_CONTROL            &kp LEFT_SHIFT            &to 0             &kp RET          &to 1                      &kp BACKSPACE
