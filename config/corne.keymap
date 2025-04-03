@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -44,37 +43,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Y  &kp C        &kp L           &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td QUESTION SEMICOLON  &none
-&none  &kp I  &hm LCTRL S  &hm LEFT_ALT R  &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &hm RCTRL A          &kp O                   &none
-&none  &kp Q  &kp V        &kp W           &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                   &none
+&none  &kp Y  &kp C        &kp L           &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td SEMICOLON COLON  &none
+&none  &kp I  &hm LCTRL S  &hm LEFT_ALT R  &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &hm RCTRL A          &kp O                &none
+&none  &kp Q  &kp V        &kp W           &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                &none
                            &kp ESCAPE      &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &kp ESCAPE  &kp AT                                &kp HASH          &kp DOLLAR      &kp PERCENT          &kp CARET           &kp AMPERSAND             &kp ASTERISK               &td COLON SEMICOLON  &none  &none
-&none  &kp TAB     &kp EQUAL                             &hm LEFT_ALT R    &hm LEFT_GUI T  &kp SINGLE_QUOTE     &td HOME BACKSLASH  &hm RIGHT_GUI LEFT_BRACE  &hm RIGHT_ALT RIGHT_BRACE  &td END PIPE         &none  &none
-&none  &kp TILDE   &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp W             &kp D           &kp DOUBLE_QUOTES    &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &kp RIGHT_BRACKET    &to 2  &none
-                                                         &kp LEFT_CONTROL  &kp LEFT_SHIFT  &to 0                &kp RET             &to 3                     &kp BACKSPACE
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&none  &kp ESCAPE  &msc SCRL_LEFT  &mmv MOVE_UP      &msc SCRL_RIGHT  &none    &kp Z              &kp F               &kp U                   &td MINUS COMMA      &td QUESTION SEMICOLON  &none
-&none  &kp TAB     &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &none    &td LG(LEFT) LEFT  &hm RIGHT_GUI DOWN  &hm RIGHT_ALT UP_ARROW  &td LG(RIGHT) RIGHT  &kp O                   &none
-&none  &kp GRAVE   &mkp RCLK       &msc SCRL_UP      &msc SCRL_DOWN   &none    &mkp LCLK          &kp H               &td UNDERSCORE SLASH    &td EXCLAMATION DOT  &kp X                   &none
-                                   &kp LEFT_CONTROL  &kp LEFT_SHIFT   &to 0    &kp RET            &to 1               &kp BACKSPACE
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&none  &kp ESCAPE  &none         &kp SLASH                   &none                     &kp UNDERSCORE    &kp MINUS        &kp KP_NUMBER_7            &kp KP_NUMBER_8            &kp KP_NUMBER_9  &none  &none
-&none  &kp TAB     &kp K_MUTE    &hm LEFT_ALT C_VOLUME_DOWN  &hm LEFT_GUI C_VOLUME_UP  &kp PLUS          &kp EQUAL        &hm RIGHT_GUI KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
-&none  &none       &kp ASTERISK  &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC      &kp PERIOD        &kp KP_NUMBER_0  &kp KP_NUMBER_1            &kp KP_NUMBER_2            &kp KP_NUMBER_3  &to 2  &none
-                                 &kp LEFT_CONTROL            &kp LEFT_SHIFT            &to 0             &kp RET          &to 1                      &kp BACKSPACE
+&none  &trans  &trans                  &kp KP_NUMBER_8          &kp KP_NUMBER_6                &kp KP_NUMBER_4    &kp KP_NUMBER_5      &kp KP_NUMBER_7                  &kp KP_NUMBER_9            &trans                   &trans  &none
+&none  &trans  &hm LCTRL LEFT_BRACKET  &hm LEFT_ALT LEFT_BRACE  &hm LEFT_GUI LEFT_PARENTHESIS  &kp KP_NUMBER_2    &kp KP_NUMBER_3      &hm RIGHT_GUI RIGHT_PARENTHESIS  &hm RIGHT_ALT RIGHT_BRACE  &hm RCTRL RIGHT_BRACKET  &trans  &none
+&none  &trans  &trans                  &trans                   &trans                         &kp KP_NUMBER_0    &kp LG(KP_NUMBER_1)  &trans                           &kp BACKSLASH              &trans                   &trans  &none
+                                       &kp ESCAPE               &kp LEFT_SHIFT                 &kp SPACE          &kp RET              &to 1                            &kp BACKSPACE
             >;
         };
     };
