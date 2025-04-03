@@ -32,6 +32,29 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        grave: A_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(GRAVE)>;
+            label = "A_GRAVE";
+        };
+
+        hat: a_hat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(I)>;
+            label = "A_HAT";
+        };
+
+        aigu: aigu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(E)>;
+            label = "AIGU";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -43,37 +66,37 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Y  &kp C        &kp L           &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td SEMICOLON COLON  &none
-&none  &kp I  &hm LCTRL S  &hm LEFT_ALT R  &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &hm RCTRL A          &kp O                &none
-&none  &kp Q  &kp V        &kp W           &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                &none
-                           &kp ESCAPE      &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
+&none  &kp Y      &kp C        &kp L           &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td SEMICOLON COLON  &none
+&none  &hm TAB I  &hm LCTRL S  &hm LEFT_ALT R  &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &hm RCTRL A          &hm TAB O            &none
+&none  &kp Q      &kp V        &kp W           &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                &none
+                               &kp ESCAPE      &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
             >;
         };
 
         L1 {
             bindings = <
-&none  &kp KP_NUMBER_0  &kp KP_NUMBER_1                 &kp KP_NUMBER_2          &kp KP_NUMBER_3                &kp KP_NUMBER_4          &kp KP_NUMBER_5  &kp KP_NUMBER_6                  &kp KP_NUMBER_7            &kp KP_NUMBER_8          &kp KP_NUMBER_9  &none
-&none  &td DOLLAR HASH  &hm LCTRL LEFT_BRACKET          &hm LEFT_ALT LEFT_BRACE  &hm LEFT_GUI LEFT_PARENTHESIS  &kp PLUS                 &kp EQUAL        &hm RIGHT_GUI RIGHT_PARENTHESIS  &hm RIGHT_ALT RIGHT_BRACE  &hm RCTRL RIGHT_BRACKET  &kp ASTERISK     &none
-&none  &kp AT           &td DOUBLE_QUOTES SINGLE_QUOTE  &kp GRAVE                &kp LESS_THAN                  &td AMPERSAND PERCENT    &kp CARET        &kp GREATER_THAN                 &kp BACKSLASH              &td QUESTION TILDE       &to 2            &none
+&none  &kp KP_NUMBER_8  &kp KP_NUMBER_6                 &kp KP_NUMBER_4          &kp KP_NUMBER_2                &kp KP_NUMBER_0          &kp KP_NUMBER_1  &kp KP_NUMBER_3                  &kp KP_NUMBER_5            &kp KP_NUMBER_7          &kp KP_NUMBER_9   &none
+&none  &hm TAB HASH     &hm LCTRL LEFT_BRACKET          &hm LEFT_ALT LEFT_BRACE  &hm LEFT_GUI LEFT_PARENTHESIS  &kp PLUS                 &kp EQUAL        &hm RIGHT_GUI RIGHT_PARENTHESIS  &hm RIGHT_ALT RIGHT_BRACE  &hm RCTRL RIGHT_BRACKET  &hm TAB ASTERISK  &none
+&none  &td AT DOLLAR    &td DOUBLE_QUOTES SINGLE_QUOTE  &kp GRAVE                &kp LESS_THAN                  &td AMPERSAND PERCENT    &kp CARET        &kp GREATER_THAN                 &kp BACKSLASH              &td QUESTION TILDE       &to 2             &none
                                                         &kp ESCAPE               &kp LEFT_SHIFT                 &to 0                    &kp RET          &to 3                            &kp BACKSPACE
             >;
         };
 
         L2 {
             bindings = <
-&none  &kp KP_NUMBER_0  &kp KP_NUMBER_1                 &kp KP_NUMBER_2          &kp KP_NUMBER_3                &kp KP_NUMBER_4          &kp KP_NUMBER_5  &kp KP_NUMBER_6                  &kp KP_NUMBER_7            &kp KP_NUMBER_8          &kp KP_NUMBER_9  &none
-&none  &td DOLLAR HASH  &hm LCTRL LEFT_BRACKET          &hm LEFT_ALT LEFT_BRACE  &hm LEFT_GUI LEFT_PARENTHESIS  &kp PLUS                 &kp EQUAL        &hm RIGHT_GUI RIGHT_PARENTHESIS  &hm RIGHT_ALT RIGHT_BRACE  &hm RCTRL RIGHT_BRACKET  &kp ASTERISK     &none
-&none  &kp AT           &td DOUBLE_QUOTES SINGLE_QUOTE  &kp GRAVE                &kp LESS_THAN                  &td AMPERSAND PERCENT    &kp CARET        &kp GREATER_THAN                 &kp BACKSLASH              &td QUESTION TILDE       &kp QUESTION     &none
-                                                        &kp ESCAPE               &kp LEFT_SHIFT                 &to 0                    &kp RET          &to 1                            &kp BACKSPACE
+&none  &trans  &trans  &trans      &trans          &trans    &trans   &trans          &kp UP_ARROW    &trans           &trans  &none
+&none  &trans  &hat    &aigu       &grave          &trans    &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &none
+&none  &trans  &trans  &trans      &trans          &trans    &trans   &trans          &trans          &trans           &trans  &none
+                       &kp ESCAPE  &kp LEFT_SHIFT  &to 0     &kp RET  &to 3           &kp BACKSPACE
             >;
         };
 
         L3 {
             bindings = <
-&none  &kp KP_NUMBER_0  &kp KP_NUMBER_1                 &kp KP_NUMBER_2          &kp KP_NUMBER_3                &kp KP_NUMBER_4          &kp KP_NUMBER_5  &kp KP_NUMBER_6                  &kp KP_NUMBER_7            &kp KP_NUMBER_8          &kp KP_NUMBER_9  &none
-&none  &td DOLLAR HASH  &hm LCTRL LEFT_BRACKET          &hm LEFT_ALT LEFT_BRACE  &hm LEFT_GUI LEFT_PARENTHESIS  &kp PLUS                 &kp EQUAL        &hm RIGHT_GUI RIGHT_PARENTHESIS  &hm RIGHT_ALT RIGHT_BRACE  &hm RCTRL RIGHT_BRACKET  &kp ASTERISK     &none
-&none  &kp AT           &td DOUBLE_QUOTES SINGLE_QUOTE  &kp GRAVE                &kp LESS_THAN                  &td AMPERSAND PERCENT    &kp CARET        &kp GREATER_THAN                 &kp BACKSLASH              &td QUESTION TILDE       &kp QUESTION     &none
-                                                        &kp ESCAPE               &kp LEFT_SHIFT                 &to 0                    &kp RET          &to 1                            &kp BACKSPACE
+&none  &trans        &trans                  &trans                   &trans                         &trans    &trans   &trans                           &trans                     &trans                   &trans            &none
+&none  &hm TAB HASH  &hm LCTRL LEFT_BRACKET  &hm LEFT_ALT LEFT_BRACE  &hm LEFT_GUI LEFT_PARENTHESIS  &trans    &trans   &hm RIGHT_GUI RIGHT_PARENTHESIS  &hm RIGHT_ALT RIGHT_BRACE  &hm RCTRL RIGHT_BRACKET  &hm TAB ASTERISK  &none
+&none  &trans        &trans                  &trans                   &trans                         &trans    &trans   &trans                           &trans                     &trans                   &to 2             &none
+                                             &kp ESCAPE               &kp LEFT_SHIFT                 &to 0     &kp RET  &to 1                            &kp BACKSPACE
             >;
         };
     };
