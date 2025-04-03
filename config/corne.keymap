@@ -7,8 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -46,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Y  &kp C  &kp L             &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td QUESTION SEMICOLON  &none
-&none  &kp I  &kp S  &hm LEFT_ALT R    &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &kp A                &kp O                   &none
-&none  &kp Q  &kp V  &kp W             &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                   &none
-                     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
+&none  &kp Y  &kp C        &kp L           &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td QUESTION SEMICOLON  &none
+&none  &kp I  &hm LCTRL S  &hm LEFT_ALT R  &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &hm RCTRL A          &kp O                   &none
+&none  &kp Q  &kp V        &kp W           &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                   &none
+                           &kp ESCAPE      &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
             >;
         };
 
