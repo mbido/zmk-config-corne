@@ -86,7 +86,7 @@
             bindings = <
 &none  &trans  &trans  &trans      &trans          &trans    &trans   &trans          &kp UP_ARROW    &trans           &trans  &none
 &none  &trans  &hat    &aigu       &grave          &trans    &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &none
-&none  &trans  &trans  &trans      &trans          &trans    &trans   &trans          &trans          &trans           &trans  &none
+&none  &trans  &trans  &trans      &trans          &trans    &trans   &trans          &trans          &trans           &kp A   &none
                        &kp ESCAPE  &kp LEFT_SHIFT  &to 0     &kp RET  &to 3           &kp BACKSPACE
             >;
         };
