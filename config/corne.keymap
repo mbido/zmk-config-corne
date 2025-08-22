@@ -66,7 +66,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Y      &kp C        &kp L           &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td SEMICOLON COLON  &none
+&none  &kp Y      &kp C        &kp L           &kp M           &kp K        &kp Z    &kp F            &kp U                 &td MINUS COMMA      &td COLON SEMICOLON  &none
 &none  &hm TAB I  &hm LCTRL S  &hm LEFT_ALT R  &hm LEFT_GUI T  &kp G        &kp P    &hm RIGHT_GUI N  &hm RIGHT_ALT E       &hm RCTRL A          &hm TAB O            &none
 &none  &kp Q      &kp V        &kp W           &kp D           &kp J        &kp B    &kp H            &td UNDERSCORE SLASH  &td EXCLAMATION DOT  &kp X                &none
                                &kp ESCAPE      &kp LEFT_SHIFT  &kp SPACE    &kp RET  &to 1            &kp BACKSPACE
